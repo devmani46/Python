@@ -1,0 +1,16 @@
+""" Create two virtual environments , install few packages in the 
+first one . How do you create a similar environment in the 
+second one?"""
+
+
+
+virtualenv env1
+virtualenv env2
+.\env1\Scripts\acivate.ps1
+pip install pygame Flask numpy pygame matplotlip
+pip freeze > asd.txt
+deactivate
+
+.\env2\Scripts\acivate.ps1
+pip install -r .\asd.txt
+deactivate

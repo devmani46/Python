@@ -1,0 +1,13 @@
+"""
+run pip freeze for the system intrepretor, Take the contents 
+and create a similar virtualenv
+"""
+
+#system intrepretor
+pip freeze > req1.txt
+
+#create virtualennv
+virtualenv asd1.txt
+.\asd1\Scripts\acivate.ps1
+pip install -r .\req1.txt
+deactivate
